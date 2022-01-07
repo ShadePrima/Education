@@ -1,40 +1,64 @@
-// for (var i = 1; i < 21; i++) {
-//     console.log(i)
+// var shopingDone = false
+
+const { lines } = require("prelude-ls")
+
+// if (shopingDone === true) {
+//     var childsAllowance = 10
+// } else {
+//     var childsAllowance = 5
 // }
 
-const button = document.querySelector('button')
+var select = document.querySelector('select')
+var para = document.querySelector('p')
 
-button.onclick = () => {
-    let name = prompt('Как вас зовут?')
-    alert('Привет ' + name + ', рады видеть вас')
+select.addEventListener('change', setWeather)
+
+function setWeather () {
+    var choice = select.value
+
+    if (choice === 'sunny') {
+        para.textContent = 'Сегодня хорошо и солнечно. Носите шорты. Идите на пляж или в парк и купите мороженное. '
+    } else if (choice === 'rainy') {
+        para.textContent = 'Дождь идет за окном; возьмите плащь и зонт и не находитесь слишком долго на улице'
+    } else if (choice === 'snowing') {
+        para.textContent = 'Снег падает - морозно! Лучше всего посидеть с чашком горячего шоколада или слепить снеговика'
+    } else if (choice === 'overcast') {
+        para.textContent = 'Дождя нет, но небо серое и мрачное; но все может измениься в любую минуту, поэтому на всякий случай возьмите с собой зонт'
+    } else {
+        para.textContent = ''
+    }
 }
 
-var myName = 'Aleksandr'
-var myAge = 37
+//Как было:
+function greet()
+{
+ console.log('Hello');
+}
+var greet1 = function(){
+ console.log('hello');
+}
+//ES6:
+var greet2 = () => {
+ console.log('hello');
+}
 
-var test = 6 < 3
-var iAmalive = true
+// Нижеуказанная функция является конструктором обьекта принимающая параметры и присваевающая их к свойствам обьекта 
+function person (name, age) {
+    this.name = name;
+    this.age = age;
+}
+var Jone = new person('John', 25)
+var James = new person('James', 21)
 
+document.write(Jone.age)
+document.write(James.age)
 
-var myNameArray = ['Chris', 'Bob', 'Jim']
-var myNumberArray = [10, 15, 40]
+methodName = function() {
+    code lines
+}
 
-myNameArray[0] // should return 'Chris'
-myNumberArray[2] // should return 40
+function bornYear() {
+    return 2016 - this.age;
+}
 
-console.log(myNameArray)
-
-
-var myInt = 5
-var myFloat = 6.667
-var myTable = 7
-
-
-let x = 50
-let y = 50
-
-x = 50
-y = 50 
-
-ctx.fillStyle = 'green'
-ctx.fillRect (10, 10, x, y)
+objectName.methodName()
