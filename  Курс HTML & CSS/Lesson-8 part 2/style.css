@@ -1,0 +1,27 @@
+img {
+    height: 100px;
+}
+
+a[href="https://www.facebook.com/watch/?ref=tab"] {
+    color: red;
+}
+
+a[href="https://mail.google.com/mail/u/0/#inbox"] {
+    color: black;    
+}
+
+a:hover {
+    color:aqua;
+}
+
+a:active {
+    font-size: 20px;
+}
+
+a:link {
+    color: rgb(138, 24, 167);
+}
+
+a:visited {
+    color:brown;
+}

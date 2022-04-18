@@ -1,0 +1,45 @@
+a:hover {
+    color:blue;
+}
+
+a:active {
+    font-size: 20px;
+    color:red;
+}
+
+a:link {
+    color:aquamarine;
+}
+
+a:visited {
+    color:blueviolet;
+}
+
+ /* размер первого символа в каждом параграфе    */
+p:first-letter {
+     font-size:30px;
+ }
+
+ p:first-line {
+     font-weight: bold;
+ }
+
+ /* меняет внешний вид фокуса в инпуте  */
+ input:focus {
+     background: #fffccc;
+     border-color: red;
+ }
+
+ /* позволяет добавить сообщение  */
+ .test:before {
+     content: 'УРА!'
+ }
+
+ .test:after {
+     content: 'ОКОНЧАНИЕ';
+ }
+
+ ::selection {
+    color: white;
+    background: black;
+ }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Второе занятие</title>
+</head>
+<body>
+    <h1>Второе занятие</h1>
+    <script>
+        var price = 20
+        var discont = 25
+
+        var total = price - (price * (discont / 100))
+        // alert(total)
+
+        var name = "Aleksandr"
+        var secondName = " Aniskevych"
+        var myString = name + secondName //операция конкатенации
+        // alert(myString)
+
+        var age = 20
+        // alert(age > 13)
+
+    // while, for, for in, forEach
+
+    // var number = 10
+    // while(number > 0) {
+    //     document.write("Number больше нуля<br>")
+    //     number = number - 1;
+    // }
+    // document.write("Number меньше нуля")
+
+    var apples = 5
+
+    while(apples > -5) {
+        document.write('Дал яблоко другу<br>')
+        apples = apples - 1
+    }
+    document.write('Изини яблок больше нет')
+
+    let sum = 0
+
+    while (true) {
+        
+        let value = + prompt('Введите чило', '')
+
+        if (!value) break
+
+        sum += value
+    }
+    // alert('Сумма: ' + sum)
+
+    // цикл ниже ипользует continue что бы выводить только четные значения 
+
+    for (let i = 0; i < 10; i++) {
+        if (i % 2 == 0) continue;
+        alert(i)
+    }
+
+
+
+    </script>
+</body>
+</html>

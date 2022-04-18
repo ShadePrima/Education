@@ -1,0 +1,48 @@
+#first {
+    color: rgb(23, 123, 204);
+}
+
+#second {
+    color: rgb(192, 80, 95);
+}
+
+#third {
+    color: rgb(51, 25, 13);
+}
+
+#fourth {
+    color: rgb(59, 190, 66);
+}
+
+h1:first-letter {
+    font-size: 24px;
+    color:rgb(23, 123, 204)
+}
+
+h2:first-letter {
+    font-size: 24px;
+    color:rgb(59, 190, 66)
+}
+
+h3:first-letter {
+    font-size: 24px;
+    color:rgb(192, 80, 95)
+}
+
+.test:first-line {
+    font-style: italic;
+}
+
+.test1:before {
+    content: "&#8211;";
+
+}
+
+.test1:after {
+    content: "Текста в конце";
+}
+
+p::selection {
+    color:rgb(200, 212, 33);
+    background: black;
+}

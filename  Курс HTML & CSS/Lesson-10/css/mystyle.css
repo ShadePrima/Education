@@ -1,0 +1,18 @@
+body {
+    background: #fffff1;
+    color: gray;
+}
+
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #bbda0f;
+}
+
+.test {
+    background: white;
+}
+
+p span {
+    background: red;
+}

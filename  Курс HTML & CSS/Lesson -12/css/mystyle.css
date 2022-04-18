@@ -1,0 +1,29 @@
+body {
+    padding: 20px;
+}
+
+h1 {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    font-style: normal;
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Rubik', sans-serif;
+    /* color: rgb(29, 44, 173); */
+    /* background-color: rgb(134, 102, 155); */
+    /* text-transform: uppercase; */
+    /* font-variant: small-caps; */
+    /* text-decoration: underline; */
+    letter-spacing: -2px;
+    word-spacing: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
